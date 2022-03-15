@@ -3,6 +3,20 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "cats": [
+        "dist/cats/cats",
+        "dist/cats"
+      ],
+      "pracownicy": [
+        "dist/pracownicy/pracownicy",
+        "dist/pracownicy"
+      ],
+      "team": [
+        "dist/team/team",
+        "dist/team"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
