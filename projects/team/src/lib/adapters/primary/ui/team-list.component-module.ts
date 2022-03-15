@@ -9,6 +9,5 @@ import { TeamListComponent } from './team-list.component';
 export class TeamListComponentModule {
 	image = {
 		src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsiQFxrMuKAIHpke90H40UKqV3s4vxILWK7g&usqp=CAU'
-		alt: ',mickey'
 	}
 }
