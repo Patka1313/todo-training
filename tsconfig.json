@@ -8,6 +8,10 @@
         "dist/cats/cats",
         "dist/cats"
       ],
+      "navigation": [
+        "dist/navigation/navigation",
+        "dist/navigation"
+      ],
       "pracownicy": [
         "dist/pracownicy/pracownicy",
         "dist/pracownicy"

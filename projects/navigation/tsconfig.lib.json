@@ -2,7 +2,6 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    [”projects/nazwa-libki/src/nazwa-pliku-publicznego-api.ts”]
     "outDir": "../../out-tsc/lib",
     "target": "es2015",
     "declaration": true,
