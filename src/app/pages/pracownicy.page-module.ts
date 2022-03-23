@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { PracownicyPage } from './pracownicy.page';
 import { AutorListComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/autor-list.component-module';
+import { TeamListComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/team-list.component-module';
 
 @NgModule({ imports: [CommonModule, 
       RouterModule.forChild([
@@ -11,7 +12,8 @@ import { AutorListComponentModule } from '../../../projects/team/src/lib/adapter
           component: PracownicyPage,
         }
       ]),
-  AutorListComponentModule
+  AutorListComponentModule,
+  TeamListComponentModule
 ],
   	declarations: [PracownicyPage],
   	providers: [],

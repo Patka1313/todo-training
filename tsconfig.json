@@ -19,6 +19,8 @@
       "team": [
         "dist/team/team",
         "dist/team"
+      ],
+      "@employees": ["project/employees/src/public-ati.ts"
       ]
     },
     "outDir": "./dist/out-tsc",
