@@ -13,7 +13,7 @@ import { NavbarComponentModule } from '../../../projects/navigation/src/lib/adap
         }
       ]),
   TeamListComponentModule,
-  NavbarComponentModule
+  NavbarComponentModule,
 ],
   	declarations: [HomePage],
   	providers: [],
