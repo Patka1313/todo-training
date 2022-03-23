@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HomePage } from './home.page';
 import { TeamListComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/team-list.component-module';
+import { NavbarComponentModule } from '../../../projects/navigation/src/lib/adapters/primary/ui/navbar.component-module';
 
 @NgModule({ imports: [CommonModule, 
       RouterModule.forChild([
@@ -11,7 +12,8 @@ import { TeamListComponentModule } from '../../../projects/team/src/lib/adapters
           component: HomePage,
         }
       ]),
-  TeamListComponentModule
+  TeamListComponentModule,
+  NavbarComponentModule
 ],
   	declarations: [HomePage],
   	providers: [],
