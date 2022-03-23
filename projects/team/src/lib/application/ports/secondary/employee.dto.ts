@@ -5,5 +5,5 @@ export interface EmployeeDTO {
   readonly name: string;
   readonly description: string;
   readonly imgUrl: string;
-  readonly department: 'DepartmentDTO';
+  readonly department: 'DepartmentDTO[]';
 }
