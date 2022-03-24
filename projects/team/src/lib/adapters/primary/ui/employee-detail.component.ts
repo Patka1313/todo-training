@@ -8,9 +8,9 @@ export class EmployeeDetailComponent {
     employees$: Observable<EmployeeDTO[]> = of ([
 {
     id: '1',
-    name: 'prezesmickey',
+    name: 'mickeymickey',
+    description: 'zapalony podróżnik, fan motoryzacji, miłośnik kuchni azjatyckiej',
     imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsiQFxrMuKAIHpke90H40UKqV3s4vxILWK7g&usqp=CAU'
-    description: 'prezes jakich mało',
 }
     ])
 }
