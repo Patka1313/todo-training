@@ -21,7 +21,7 @@ export class TeamListComponent {
             imgUrl: 'https://assets.puzzlefactory.pl/puzzle/310/555/original.jpg',
             department: {
                  name: 'dyrektor',
-                 employeeCount: 2
+                 employeeCount: 1
             }
         },
         {   id: '3',
@@ -30,7 +30,7 @@ export class TeamListComponent {
             imgUrl: 'https://miastodzieci.pl/wp-content/uploads/2020/10/jerry_mouse.jpg',
             department: {
                 name: 'asystent',
-                employeeCount: 5
+                employeeCount: 1
             }
         }
 
