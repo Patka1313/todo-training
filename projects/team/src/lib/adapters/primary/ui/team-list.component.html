@@ -1,6 +1,6 @@
 <div class="row">
-    <div *ngFor="let employee of employees$ | async" class="card" style="width: 18rem;">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsiQFxrMuKAIHpke90H40UKqV3s4vxILWK7g&usqp=CAU" class="card-img-top" alt="...x..." height="250" width="100">
+    <div *ngFor="let employee of list$ | async" class="card" style="width: 18rem;">
+        <img [src]="employee.imgUrl" class="card-img-top" alt="...x..." height="250" width="100">
         <div class="card-body">
         <h5 class="card-title">{{employee.name}}</h5>
         <p class="card-text">zapalony podróżnik, fan motoryzacji, miłośnik kuchni azjatyckiej</p>
@@ -8,22 +8,5 @@
         </div>
     </div>
 
-    <div *ngFor="let employee of employees$ | async" class="card" style="width: 18rem;">
-        <img src="https://assets.puzzlefactory.pl/puzzle/310/555/original.jpg" class="card-img-top" alt="...x..." height="250" width="100">
-        <div class="card-body">
-        <h5 class="card-title">{{employee.name}}</h5>
-        <p class="card-text">wszędzie mu dobrze gdzie go nie ma, kulturoznawca, najlepszy przyjaciel mickeya</p>
-        <a href="#" class="btn btn-primary">kontakt</a>
-        </div>
-    </div>   
 
-        <div *ngFor="let employee of employees$ | async" class="card" style="width: 18rem;">
-            <img src="https://miastodzieci.pl/wp-content/uploads/2020/10/jerry_mouse.jpg" class="card-img-top" alt="...x..." height="250" width="100">
-            <div class="card-body">
-            <h5 class="card-title">{{employee.name}}</h5>
-            <p class="card-text">człowiek złoto, niezastąpiony w biurze, niezastąpiony w podróży</p>
-            <a href="#" class="btn btn-primary">kontakt</a>
-            </div>
-        </div>
     </div>
-
