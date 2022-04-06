@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
-import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { GETS_ALL_EMPLOYEE_DTO } from '../../../application/ports/secondary/gets-all-employee.dto-port';
 import { FirebaseEmployeesService } from './firebase-employees.service';
 
 @NgModule({ imports: [AngularFirestoreModule],
   	declarations: [],
-  	providers: [FirebaseEmployeesService],
+  	providers: [FirebaseEmployeesService, {provide: GETS_ALL_EMPLOYEE_DTO, useExisting: FirebaseEmployeesService}], 
   	exports: [] })
 export class FirebaseEmployeesServiceModule {
 }
