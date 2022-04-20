@@ -8,5 +8,10 @@ export class EmployeeDetailComponent {
   detail$: Observable<EmployeeDTO> = this._getsOneEmployeeDto.getOne('hXtmX075GzLmRUZqNa9a');
 
   constructor(@Inject(GETS_ONE_EMPLOYEE_DTO) private _getsOneEmployeeDto: GetsOneEmployeeDtoPort) {
+  employee$: Observable<EmployeeDTO[]> = this._getsAllEmployeeDto.getAll()
+    .pipe(
+      map((employeeList: EmployeeDTO[]) =>
+        employeeList.sort((a, b) => a.id - b.id) 
+      )
   }
 }
