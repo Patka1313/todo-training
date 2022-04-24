@@ -8,15 +8,16 @@ import { FirebaseEmployeesServiceModule } from 'projects/team/src/lib/adapters/s
 @NgModule({ imports: [CommonModule, 
       RouterModule.forChild([
         {
-          path: '',
+          path: 'employeeId',
           component: EmployeeDetailsPage,
         }
       ]),
   EmployeeDetailComponentModule,
   FirebaseEmployeesServiceModule,
-],
+]
   	declarations: [EmployeeDetailsPage],
   	providers: [],
-  	exports: [] })
+  	exports: [],
+   })
 export class EmployeeDetailsPageModule {
 }

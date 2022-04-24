@@ -7,4 +7,5 @@ export interface EmployeeDTO {
   readonly description: string;
   readonly imgUrl: string;
   readonly department: DepartmentDTO;
+  readonly order?: number;
 }
