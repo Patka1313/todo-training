@@ -1,6 +1,7 @@
 <div class="row">
     <div *ngFor="let employee of list$ | async" class="card" style="width: 18rem;">
-        <img [routerLink]="'/pracownik/'+employee.id" [src]="employee.imgUrl" class="card-img-top" alt="...x..." height="250" width="100">
+        <img [routerLink]="'/pracownik/'+employee.id' (click)="onItemClicked(employee)">
+        [src]="employee.imgUrl" class="card-img-top" alt="...x..." height="250" width="100">
         <div class="card-body">
         <h5 class="card-title">{{employee.name}}</h5>
         <p class="card-text">{{employee.description}}</p>

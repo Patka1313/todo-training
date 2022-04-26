@@ -5,7 +5,7 @@ import { EmployeeDetailsPage } from './employee-details.page';
 import { EmployeeDetailComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/employee-detail.component-module';
 import { FirebaseEmployeesServiceModule } from 'projects/team/src/lib/adapters/secondary/infrastructure/firebase-employees.service-module';
 
-@NgModule({ imports: [CommonModule, 
+@NgModule( imports, [CommonModule,
       RouterModule.forChild([
         {
           path: 'employeeId',
@@ -13,11 +13,14 @@ import { FirebaseEmployeesServiceModule } from 'projects/team/src/lib/adapters/s
         }
       ]),
   EmployeeDetailComponentModule,
-  FirebaseEmployeesServiceModule,
+  FirebaseEmployeesServiceModule
 ]
-  	declarations: [EmployeeDetailsPage],
-  	providers: [],
-  	exports: [],
-   })
-export class EmployeeDetailsPageModule {
-}
+([
+ 
+  	declarations, [EmployeeDetailsPage],
+  	providers, [],
+  	exports, [],
+])
+
+({export: class EmployeeDetailsPageModule {
+}}))
